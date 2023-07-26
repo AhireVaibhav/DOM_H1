@@ -1,0 +1,41 @@
+body{
+    background-color:aquamarine
+   
+
+}
+p{
+    font-size: 1.2rem;
+}
+h1{
+ 
+ color: blue;
+ 
+}
+.h1{
+    text-decoration: none;
+    color: blueviolet;
+}
+#replace{
+    font-size: 30px;
+    color: rgb(205, 55, 50);
+}
+pre{
+    color: rgb(255, 0, 149);
+}
+.parent{
+    display: flex;
+    
+    justify-content: center;
+}
+.child{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    background-color: rgb(0, 255, 55);
+}
+tr:nth-child(odd){
+    background-color: orangered;
+}
+tr:nth-child(even){
+    background-color: gray;
+}

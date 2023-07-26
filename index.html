@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DOM HANDSON 1</title>
+</head>
+<body>
+    <center><h1>* -- DOM HANDSON -- * </h1></center>
+    <p> Q.1  Write the code to access element which is having id as "text" </p>
+    answer: <pre> let head=document.getElementById('text').innerHTML 
+          console.log(head);
+       <hr>
+    </pre>
+    <p> Q.2 Write the code to access element which is having tag as "h1"</p>
+    answer: <pre> let head=document.getElementsByTagName('h1').innerHTML
+        console.log(head);
+    </pre><hr>
+    <p> Q.3 Write the code to access element which is having class as "box"</p>
+    answer: <pre> let head=document.getElementsByClassName('box').innerHTML
+        console.log(head); </pre><hr>
+    <p>Q.4 h1 tag  Hello Change the heading from ""Hello"" to ""Hello World"" using DOM functions" </p>
+     answer:<h1 class="h1">Hello</h1><hr>
+     <p>Q.5 Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</p>
+     answer: <p id="replace">Hello world</p>
+    <center><button onclick="replace()">Replace Text</button></center>
+    <p>Q.6 Add one style attribute and give text color as red and id attribute and give the id value as heading in the above given h1 tag using DOM functions</p>
+   answer: <h1 >Hello</h1>
+    <p>Q.7  Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</p>
+ answer: <div class="parent">
+                 <div class="child"></div>
+                 <div class="child"></div>
+                 <div class="child"></div>
+                 <div class="child"></div>
+        </div>
+        <br>
+<center><button onclick="direction()"> Change Direction</button></center>
+
+<p>Q.8 What’s the difference between window vs document?</p>
+<table  border-collapse: collapse;>
+    <tr >
+        <th style="width:49%">window</th>
+        <th>document</th>
+    </tr>
+    <tr>
+     <td>It represents a browser window or frame that displays the contents of the webpage.   </td>
+     <td>It represents any HTML document or web page that is loaded in the browser.</td>
+    </tr>
+    <tr>
+<td>It is the very first object that is loaded in the browser.</td>
+<td>It is loaded inside the window.</td>
+    </tr>
+    <tr>
+        <td>Global objects, functions, and variables of JavaScript are members of the window object.</td>
+        <td>All the tags, elements with attributes in HTML are part of the document.
+
+        </td>
+    </tr>
+    <tr>
+        <td>We can access the window from the window only. i.e. window.window</td>
+        <td>We can access the document from a window using the window. document</td>
+    </tr>
+    <tr>
+        <td>Properties of the window object cannot be accessed by the document object.</td>
+        <td>Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title</td>
+    </tr>
+</table>
+<p> Q.9 Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</p>
+<h1>Start clock</h1>
+<h1></h1>
+<p>Q.10 Gause Game</p>
+<a href="index1.html">start</a>
+</body>
+<script src="./script.js"></script>
+</html>
